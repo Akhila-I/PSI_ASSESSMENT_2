@@ -1,0 +1,123 @@
+1.
+object reverse{
+def main(args:Array[String])
+{
+val string="https://www.google.com"
+val reverseStringUpperCase=string.reverse.toUpperCase()
+printlln(s"The formatted upper case reversed strimg is: $reverseStringUpperCase")
+}
+
+-----------------------------------------------------------------------------------------
+2.
+object donutJSONFormat{
+def main(args:Array[String])
+{
+val donut_name="Vanilla Donut"
+val quantity_purchased=10
+val price=2.5
+val donutJSON=
+	"""
+	|{
+	|{"donut_name:"$donut_name,
+	|{"quantity_purchased:"$quantity_purchased,
+	|{"price:"$price
+	|}
+	"""
+println(donutJSON)
+
+-----------------------------------------------------------------------------------------
+
+3.
+import scala.io.StdIn._
+object customerDetails{
+def main(args:Array[String])
+{
+val name,age
+println(s"Enter your name : ")
+name=reaLine()
+println(s"Enter your age : ")
+age=readInt()
+println("Name: $name")
+println("Age: $age)
+}
+
+-----------------------------------------------------------------------------------------
+
+4.
+object findChar{
+def main(args:Array[String])
+{
+val string="http://www.google.com "
+val char=string.charAt(7)
+println(s"The 8th char in the given string is : $char")
+}
+
+-----------------------------------------------------------------------------------------
+
+5.
+object totalCostDonuts{
+def main(args:Array[String])
+{
+val quantity=10
+val price=2.5
+val totalCost=quantity*price
+val roundToTwoDecimal=totalCost-(totalCost%0.01)
+println(s"Total cost of $quantity Glazed Donuts= $roundToTwoDecimal)
+}
+
+-----------------------------------------------------------------------------------------
+
+6.
+import scala.io.StdIn._
+object customerFavouriteMovie{
+def main(args:Array[String])
+{
+val favouriteMovie=readLine()
+println(s"Customer's favorite movie" is totally awesome!")
+}
+
+-----------------------------------------------------------------------------------------
+
+7.
+object printLexicalCoupenCodes{
+def printCoupenCodes(array:Array[String]):Unit=
+{
+var i=0
+while(i<array.length)
+{
+println(array(i)+" - "+array(i).length)
+i+=1
+}
+}
+def main(args:Array[String])
+{
+val coupenCodes:Array[String]=Array("A", "BB", "CCC", "DDDD", "EEEEE")
+print(printCoupenCodes)
+}
+}
+
+-----------------------------------------------------------------------------------------
+
+8.
+object sum{
+def calculateSum(sumList:List[Int]):Int=
+{
+var sum=sumList.sum
+sum
+}
+def main(args:Array[String])
+{
+val list=List.range(100,150,10)
+val listToString=list.mkString(" , ")
+println(s"Elements of Vector from 100 to 150, excluding the 150 number literal=$listToString)
+val sum=calculateSum(list)
+println(s"Sum for elements in the List=$sum")
+}
+}
+
+-----------------------------------------------------------------------------------------
+
+
+
+
+
